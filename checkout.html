@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <main>
+    <!-- Order Summary Table -->
+    <section>
+      <h2>Your Order</h2>
+      <table id="checkoutTable">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Order items will be dynamically populated here -->
+        </tbody>
+      </table>
+
+      <h2>Order Summary</h2>
+      <table id="summaryTable">
+        <tr>
+          <th>Total Price</th>
+          <td id="totalCell">Rs. 0.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Customer Details Form -->
+    <section>
+      <h2>Enter Your Details</h2>
+      <form id="checkoutForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required />
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required />
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="month" id="expiryDate" required />
+
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" required />
+
+        <button type="submit">Pay</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="JS/checkout.js"></script>
+</body>
+</html>

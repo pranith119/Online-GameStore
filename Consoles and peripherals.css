@@ -1,0 +1,264 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Header Styles */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a img {
+  max-width: 150px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Section Styles */
+section {
+  margin: 20px;
+  padding: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px; /* Set a specific height */
+  margin-bottom: 20px;
+  background-image: url('image.png'); /* Update the image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Added shadow for visual effect */
+  border-radius: 5px; /* Rounded corners */
+
+  
+}
+.centered h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+
+
+.centered p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 200px;
+  margin-right: -259px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #02f80a;
+}
+
+p {
+  text-align: center;
+}
+
+/* Subsection Styles */
+.section {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+
+
+
+.section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section p {
+  text-align: justify;
+}
+
+/* Lists Section */
+.lists ul, .lists ol {
+  margin: 10px 0;
+  padding-left: 40px;
+  color: #fafafa;
+}
+
+.lists ul li, .lists ol li {
+  margin: 10px 0;
+  
+}
+/* Grid Section */
+/* Grid Section */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 120px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #1f1f1f; /* Slightly lighter black for items */
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Needed for positioning the price */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Make the grid item container cover the image */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+/* Price styles */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff00; /* Bright green for price */
+  position: absolute; /* Positioning it over the image */
+  top: 50%; /* Center the price vertically */
+  left: 50%; /* Center the price horizontally */
+  transform: translate(-50%, -50%); /* Exactly center the price */
+  opacity: 0; /* Initially, the price is hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Show the price when hovering over the grid item */
+.grid-item:hover .price {
+  opacity: 1; /* Make the price visible on hover */
+}
+
+/* Hide the image when hovering */
+.grid-item:hover img {
+  opacity: 0.3; /* Make the image slightly transparent to emphasize the price */
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.footer-left, .footer-right {
+  width: 45%;
+}
+
+.footer-logo {
+  width: 130px;
+  margin-bottom: 2px;
+}
+
+.footer-left h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-right ul li .icon {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .main-image {
+      height: auto;
+  }
+}

@@ -1,0 +1,254 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #82f312;
+}
+
+/* Main image section */
+section {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.centered h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.centered p {
+  font-size: 1.2rem;
+}
+
+
+/* Form Sections */
+form section {
+  margin: 30px 20px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form section h2 {
+  margin-bottom: 2px;
+  text-align: center;
+  color: #00ff08;
+  font-size: 40px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 450px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+form input[type="number"] {
+  margin-left: auto;
+  width: 9  0px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form img {
+  border-radius: 60px;
+  margin-right: 15px;
+}
+
+/* Button styling */
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #268b2a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:#50b654;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  flex: 1 1 45%; /* Adjust width for two items per line */
+  margin: 10px;
+  text-align: center;
+}
+
+.item:last-child {
+  flex: 1 1 100%; /* Makes the last item take up full width */
+}
+
+
+/* Order table styling */
+table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #268b2a;
+  color: white;
+}
+
+table tbody tr:hover {
+  background-color: #f4f4f4;
+}
+
+#totalPrice {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+
+  .centered h1 {
+    font-size: 2rem;
+  }
+
+  .centered p {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="number"] {
+    width: 50px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav a img {
+    width: 40px;
+  }
+
+  .centered h1 {
+    font-size: 1.8rem;
+  }
+
+  .centered p {
+    font-size: 0.9rem;
+  }
+
+  .buttons button {
+    font-size: 0.9rem;
+  }
+}
